@@ -1,0 +1,359 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Roshan Rane</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+          rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            overflow-y: auto;
+        }
+
+        p {
+            line-height: 1.5em;
+            font-size: 1rem;
+        }
+
+        .ibm-plex-sans-regular {
+            font-family: "IBM Plex Sans", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        .ibm-plex-sans-medium {
+            font-family: "IBM Plex Sans", sans-serif;
+            font-weight: 500;
+            font-style: normal;
+        }
+
+        .main {
+            font-family: "IBM Plex Sans", sans-serif;
+            font-weight: 400;
+            padding: 2rem;
+            display: flex;
+            flex-flow: column;
+            gap: 2rem;
+            min-width: 20rem;
+        }
+
+        .left {
+            display: flex;
+            flex-flow: column;
+            gap: 1rem
+        }
+
+        .title {
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            font-weight: 500;
+        }
+
+        .caption {
+            font-size: 0.9rem;
+        }
+
+        .profile {
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .profile_pic {
+            display: inline-flex;
+            width: 8rem;
+            height: auto;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .profile_details {
+            display: flex;
+            flex-flow: column;
+            gap: 0.5rem;
+        }
+
+        .social_links {
+            display: flex;
+            flex-flow: column;
+            gap: 0.5rem;
+            list-style: none;
+        }
+
+        .social_links__item {
+            display: flex;
+            flex-flow: row;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .social_links__icon {
+            width: 1.5rem;
+            height: 1.5rem;
+            fill: #000;
+        }
+
+        .right {
+            display: flex;
+            flex-flow: column;
+            gap: 2rem
+        }
+
+        .section {
+            display: flex;
+            flex-flow: column;
+            gap: 1rem
+        }
+
+        .publications {
+            display: flex;
+            flex-flow: column;
+            gap: 1rem;
+            list-style: none;
+        }
+
+        .publications__item {
+            display: flex;
+            flex-flow: column;
+            gap: 0.25rem;
+            border-bottom: 1px solid black;
+            padding-bottom: 1rem;
+        }
+
+        .publications__item:last-child {
+            border-bottom: none;
+        }
+
+        .publications__item__title {
+            font-size: 1.2rem;
+        }
+
+        .publications__item__authors {
+            font-size: 0.85rem;
+        }
+
+        .publications__item__book {
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        .publications__item__links {
+            font-size: 0.9rem;
+        }
+
+        @media (min-width: 768px) {
+            .main {
+                flex-flow: row;
+                gap: 4rem;
+                max-width: 75rem;
+                padding: 4rem;
+                margin: 0 auto;
+            }
+
+            .left {
+                min-width: 15rem;
+            }
+
+            .profile {
+                flex-flow: column;
+                gap: 1rem;
+            }
+
+            .profile_pic {
+                width: 100%;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <div class="left">
+
+        <div class="profile">
+            <img src="profile.png" alt="Roshan Rane" class="profile_pic"/>
+            <div class="profile_details">
+                <h1 class="title">Roshan Rane</h1>
+                <p class="caption">
+                    PhD candidate at HU Berlin; Employed at Charité Medical University, Berlin; Member of ECN, Berlin.
+                </p>
+            </div>
+        </div>
+        <ul class="social_links">
+            <li class="social_links__item">
+                <svg class="social_links__icon" viewBox="0 0 32 32">
+                    <path d="M16 18c-2.8 0-5-2.2-5-5s2.2-5 5-5 5 2.2 5 5-2.2 5-5 5z"/>
+                    <path d="m16 30-8.4-9.9c0-.1-.3-.5-.3-.5C5.8 17.7 5 15.4 5 13 5 6.9 9.9 2 16 2s11 4.9 11 11c0 2.4-.8 4.7-2.2 6.6l-.3.4L16 30zM8.8 18.4s.2.3.3.4l6.9 8.1 6.9-8.1c0-.1.3-.4.3-.4C24.4 16.8 25 15 25 13c0-5-4-9-9-9s-9 4-9 9c0 2 .6 3.8 1.8 5.4z"/>
+                    <path fill="none" d="M0 0h32v32H0z"/>
+                </svg>
+                <span>Berlin, Germany</span>
+            </li>
+
+            <li class="social_links__item">
+                <svg class="social_links__icon" viewBox="0 0 32 32">
+                    <path d="M28 6H4a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h24a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2Zm-2.2 2L16 14.78 6.2 8ZM4 24V8.91l11.43 7.91a1 1 0 0 0 1.14 0L28 8.91V24Z"/>
+                    <path fill="none" d="M0 0h32v32H0z" data-name="&lt;Transparent Rectangle&gt;"/>
+                </svg>
+                <a href="mailto:roshan.rane@bccn-berlin.de">roshan.rane@bccn-berlin.de</a>
+            </li>
+
+            <li class="social_links__item">
+                <svg class="social_links__icon" viewBox="0 0 32 32">
+                    <path fill-rule="evenodd"
+                          d="M16 2a14 14 0 0 0-4.43 27.28c.7.13 1-.3 1-.67v-2.38c-3.89.84-4.71-1.88-4.71-1.88a3.71 3.71 0 0 0-1.62-2.05c-1.27-.86.1-.85.1-.85a2.94 2.94 0 0 1 2.14 1.45 3 3 0 0 0 4.08 1.16 2.93 2.93 0 0 1 .88-1.87c-3.1-.36-6.37-1.56-6.37-6.92a5.4 5.4 0 0 1 1.44-3.76 5 5 0 0 1 .14-3.7s1.17-.38 3.85 1.43a13.3 13.3 0 0 1 7 0c2.67-1.81 3.84-1.43 3.84-1.43a5 5 0 0 1 .14 3.7 5.4 5.4 0 0 1 1.44 3.76c0 5.38-3.27 6.56-6.39 6.91a3.33 3.33 0 0 1 .95 2.59v3.84c0 .46.25.81 1 .67A14 14 0 0 0 16 2Z"/>
+                    <path fill="none" d="M0 0h32v32H0z" data-name="&lt;Transparent Rectangle&gt;"/>
+                </svg>
+                <a href="https://github.com/RoshanRane" target="_blank" rel="noopener noreferrer">Github</a>
+            </li>
+
+            <li class="social_links__item">
+                <svg class="social_links__icon" viewBox="0 0 32 32">
+                    <path d="M26 30h-2v-3a5.006 5.006 0 0 0-5-5h-6a5.006 5.006 0 0 0-5 5v3H6v-3a7.008 7.008 0 0 1 7-7h6a7.008 7.008 0 0 1 7 7ZM5 6a1 1 0 0 0-1 1v9h2V7a1 1 0 0 0-1-1Z"/>
+                    <path d="M4 2v2h5v7a7 7 0 0 0 14 0V4h5V2Zm7 2h10v3H11Zm5 12a5 5 0 0 1-5-5V9h10v2a5 5 0 0 1-5 5Z"/>
+                    <path fill="none" d="M0 0h32v32H0z" data-name="&lt;Transparent Rectangle&gt;"/>
+                </svg>
+                <a href="https://scholar.google.com/citations?user=PlzoAowAAAAJ" target="_blank"
+                   rel="noopener noreferrer">Google Scholar</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="right">
+        <div class="section">
+            <h2 class="subtitle">About Me</h2>
+            <p>
+                Hello! I am Roshan Rane, currently a Research Associate and a Ph.D. student at the "Machine Learning in
+                Clinical Neuroimaging" group. I received my bachelor's degree in engineering in 2014 from Bangalore
+                Institute of Technology, India, and
+                completed my master's in Cognitive Systems from Universität Potsdam in 2020. In my master's, my research
+                focus was deep learning, computer vision, and cognitive modeling.<br/><br/>Apart from my research
+                experiences (see
+                publications link below), I also have substantial industrial experience. After my bachelor's, I worked
+                as
+                an embedded software engineer for three years at Robert Bosch, India. During my master's, I also worked
+                as a
+                research assistant in this lab where I worked closely with brain MRI analysis and later on worked as a
+                Machine Learning Specialist at an autonomous driving startup in Berlin for a year.
+                My current research in this lab involves developing deep learning methods for analyzing brain MRI of
+                subjects with psychiatric disorders like drug addiction and drawing reliable conclusions. I am also
+                interested in
+                designing AI-based tools to assist in the diagnosis of Psychiatric disorders.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2 class="subtitle">Publications</h2>
+            <ul class="publications">
+                <li class="publications__item">
+                    <span class="publications__item__title"> PredNet and Predictive Coding: A Critical Review</span>
+                    <span class="publications__item__authors">
+                        <strong>Roshan Prakash Rane</strong>, Edit Szügyi, Vageesh Saxena, André Ofner, Sebastian Stober
+                    </span>
+                    <span class="publications__item__book">
+                        Proceedings of the 2020 International Conference on Multimedia Retrieval (2020)
+                    </span>
+                    <span class="publications__item__links">
+                        <a href="https://dl.acm.org/doi/abs/10.1145/3372278.3390694" target="_blank"
+                           rel="noopener noreferrer">ACM Digital Library</a>
+                    </span>
+                </li>
+                <li class="publications__item">
+                   <span class="publications__item__title">The utility of discourse parsing features for predicting argumentation
+                       structure</span>
+                    <span class="publications__item__authors">
+                        Freya Hewett, <strong>Roshan Prakash Rane</strong>, Nina Harlacher, Manfred Stede
+                    </span>
+                    <span class="publications__item__book">
+                        Proceedings of the 6th Workshop on Argument Mining (2019)
+                    </span>
+                    <span class="publications__item__links">
+                        <a href="https://aclanthology.org/W19-4512/" target="_blank" rel="noopener noreferrer">ACL Anthology</a>
+                    </span>
+                </li>
+                <li class="publications__item">
+                    <span class="publications__item__title">Structural differences in adolescent brains can predict alcohol misuse</span>
+                    <span class="publications__item__authors">
+                        <strong>Roshan Prakash Rane</strong>, Evert Ferdinand de Man, JiHoon Kim, Kai Görgen, Mira Tschorn, Michael A Rapp, Tobias Banaschewski, Arun LW Bokde, Sylvane Desrivieres, Herta Flor, Antoine Grigis, Hugh Garavan, Penny A Gowland, Rüdiger Brühl, Jean-Luc Martinot, Marie-Laure Paillere Martinot, Eric Artiges, Frauke Nees, Dimitri Papadopoulos Orfanos, Herve Lemaitre, Tomas Paus, Luise Poustka, Juliane Fröhner, Lauren Robinson, Michael N Smolka, Jeanne Winterer, Robert Whelan, Gunter Schumann, Henrik Walter, Andreas Heinz, Kerstin Ritter, IMAGEN consortium
+                    </span>
+                    <span class="publications__item__book">
+                        Elife (2022)
+                    </span>
+                    <span class="publications__item__links">
+                        <a href="https://elifesciences.org/articles/77545" target="_blank" rel="noopener noreferrer">eLife</a>
+                    </span>
+                </li>
+                <li class="publications__item">
+                    <span class="publications__item__title">AIM in Alcohol and Drug Dependence</span>
+                    <span class="publications__item__authors">
+                        <strong>Roshan Prakash Rane</strong>, Andreas Heinz, Kerstin Ritter
+                    </span>
+                    <span class="publications__item__book">
+                        Artificial Intelligence in Medicine (2021)
+                    </span>
+                    <span class="publications__item__links">
+                        <a href="https://link.springer.com/referenceworkentry/10.1007/978-3-030-64573-1_219"
+                           target="_blank" rel="noopener noreferrer">Springer Link</a>
+                    </span>
+                </li>
+                <li class="publications__item">
+                    <span class="publications__item__title">Uncontrolled eating and sensation-seeking partially explain the prediction of future binge drinking from adolescent brain structure</span>
+                    <span class="publications__item__authors">
+                        <strong>Roshan Prakash Rane</strong>, Milena Philomena Maria Musial, Anne Beck, Michael Rapp, Florian Schlagenhauf, Tobias Banaschewski, Arun LW Bokde, Marie-Laure Paillère Martinot, Eric Artiges, Frauke Nees, Herve Lemaitre, Sarah Hohmann, Gunter Schumann, Henrik Walter, Andreas Heinz, Kerstin Ritter, IMAGEN consortium
+                    </span>
+                    <span class="publications__item__book">
+                        Cham Springer (2023)
+                    </span>
+                    <span class="publications__item__links">
+                        <a href="https://osf.io/preprints/psyarxiv/5vy93" target="_blank" rel="noopener noreferrer">PsyArXiv Preprints - OSF</a> |
+                        <a href="https://www.sciencedirect.com/science/article/pii/S2213158223002115" target="_blank"
+                           rel="noopener noreferrer">ScienceDirect</a>
+                    </span>
+                </li>
+                <li class="publications__item">
+                    <span class="publications__item__title">Identifying confounders in deep-learning-based model predictions using DeepRepViz</span>
+                    <span class="publications__item__authors">
+                        <strong>Roshan Prakash Rane</strong>, JiHoon Kim, Arjun Umesha, Didem Stark, Marc-André Schulz, Kerstin Ritter
+                    </span>
+                    <span class="publications__item__book">
+                        arXiv preprint (2023)
+                    </span>
+                    <span class="publications__item__links">
+                        <a href="https://arxiv.org/abs/2309.15551" target="_blank" rel="noopener noreferrer">arXiv</a>
+                    </span>
+                </li>
+                <li class="publications__item">
+                    <span class="publications__item__title">Efficient Pretraining Techniques for Brain-MRI Datasets</span>
+                    <span class="publications__item__authors">
+                        <strong>Roshan Prakash Rane</strong>
+                    </span>
+                    <span class="publications__item__links">
+                        <a href="https://www.researchgate.net/profile/Roshan-Rane/publication/336588305_Efficient_Pretraining_Techniques_for_Brain-MRI_Datasets/links/5da726cc4585159bc3d4276a/Efficient-Pretraining-Techniques-for-Brain-MRI-Datasets.pdf" target="_blank" rel="noopener noreferrer">ResearchGate</a>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
